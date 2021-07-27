@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(/resource/aas.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+header .navigation a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+header .navigation a:hover:not(.active) {
+    background: #fff;
+    color: rebeccapurple;
+}
+
+.active {
+    background: #fff;
+}
+
+.content {
+    max-width: 650px;
+    margin-top: 60px;
+    margin-left: 290px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.info a {
+    color: rebeccapurple;
+    text-decoration: none;
+    transition: 0.3s;
+    transition-property: color;
+}
+
+.info a:hover:not(.active) {
+    color: grey;
+}
+
+.footer {
+    margin-top: 350px;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(123, 99, 146);
+}
